@@ -73,6 +73,11 @@ function winLose(user, js){
     } else if(js == "パー"){
       winLoseStr = "あいこ";
     }
+  } else if(user == null){
+    alert("またチャレンジしてね");
+  } else {
+    alert("グー・チョキ・パーのいずれかを入力してください");
+    prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
   }
 
   return winLoseStr;
