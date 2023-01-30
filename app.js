@@ -22,8 +22,15 @@
 //   });
 // });
 
+// $(function(){
+//   $('button').on('click', function(){
+//     $('ul').children().css('color','red');
+//   });
+// });
+
 $(function(){
-  $('button').on('click', function(){
-    $('ul').children().css('color','red');
+  $('button').on('click', function() {
+    $('button').css('background-color','');
+    $(this).css('background-color','red');
   });
 });
