@@ -31,6 +31,6 @@
 $(function(){
   $('button').on('click', function() {
     $('button').css('background-color','');
-    $(this).css('background-color','red');
+    $('ul').children().css('color','red');
   });
 });
