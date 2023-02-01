@@ -1,36 +1,15 @@
-// $(function(){
-//   $('.bg1').on('click', function(){
-//     $('.bg1').slideUp();
-//   });
+// alertStringという変数を宣言
+let alertString;
 
-//   $('.bg2').on('click', function(){
-//     $('.bg2').slideUp();
-//   });
+// addStringという関数を呼び出し、変数へ格納
+// alertStringという変数に引数"WebCamp"のaddString関数を代入
+alertString = addString("WebCamp");
 
-//   $('.bg3').on('click', function(){
-//     $('.bg3').slideUp();
-//   });
+//変数の中身をアラートで表示する
+alert(alertString);
 
-//   $('.bg4').on('click', function(){
-//     $('.bg4').slideUp();
-//   });
-// });
-
-// $(function(){
-//   $('.box1').on('click', function(){
-//     $(this).slideUp();
-//   });
-// });
-
-// $(function(){
-//   $('button').on('click', function(){
-//     $('ul').children().css('color','red');
-//   });
-// });
-
-$(function(){
-  $('button').on('click', function() {
-    $('button').css('background-color','');
-    $('ul').children().css('color','red');
-  });
-});
+// 作成した関数
+function addString(strA){
+  let addStr = "Hello " + strA;
+  return addStr;
+}
