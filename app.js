@@ -1,15 +1,40 @@
-// alertStringという変数を宣言
-let alertString;
+// $(function(){
+//   $('.bg1').on('click', function(){
+//     $('.bg1').slideUp();
+//   });
 
-// addStringという関数を呼び出し、変数へ格納
-// alertStringという変数に引数"WebCamp"のaddString関数を代入
-alertString = addString("WebCamp");
+//   $('.bg2').on('click', function(){
+//     $('.bg2').slideUp();
+//   });
 
-//変数の中身をアラートで表示する
-alert(alertString);
+//   $('.bg3').on('click', function(){
+//     $('.bg3').slideUp();
+//   });
 
-// 作成した関数
-function addString(strA){
-  let addStr = "Hello " + strA;
-  return addStr;
-}
+//   $('.bg4').on('click', function(){
+//     $('.bg4').slideUp();
+//   });
+// });
+
+// $(function(){
+//   $('.box1').on('click', function(){
+//     $(this).slideUp();
+//   });
+// });
+
+// $(function(){
+//   $('button').on('click', function(){
+//     $('ul').children().css('color','red');
+//   });
+// });
+
+$(function(){
+  $('button').on('click', function() {
+    $('button').css('background-color','red');
+    if ('ul').children().css('color','red'){
+      ('ul').children().css('color','black')
+    }else{
+      ('ul').children().css('color','red');
+    };
+  });
+});
