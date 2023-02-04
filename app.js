@@ -30,11 +30,10 @@
 
 $(function(){
   $('button').on('click', function() {
-    $('button').css('background-color','red');
-    if ('ul').children().css('color','red'){
+    if(('ul').children().css('color','red')){
       ('ul').children().css('color','black')
     }else{
-      ('ul').children().css('color','red');
+      (('ul').children().css('color','red'));
     };
   });
 });
