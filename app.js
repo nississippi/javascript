@@ -28,12 +28,9 @@
 //   });
 // });
 
-$(function(){
-  $('button').on('click', function() {
-    if(('ul').children().css('color','red')){
-      ('ul').children().css('color','black')
-    }else{
-      (('ul').children().css('color','red'));
-    };
+$(function() {
+  $('button').click(function() {
+    // cssで背景色を切り替え
+    $(".bgBox").toggleClass("bgPink");
   });
 });
