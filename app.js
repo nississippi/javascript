@@ -1,36 +1,10 @@
-// $(function(){
-//   $('.bg1').on('click', function(){
-//     $('.bg1').slideUp();
-//   });
-
-//   $('.bg2').on('click', function(){
-//     $('.bg2').slideUp();
-//   });
-
-//   $('.bg3').on('click', function(){
-//     $('.bg3').slideUp();
-//   });
-
-//   $('.bg4').on('click', function(){
-//     $('.bg4').slideUp();
-//   });
-// });
-
-// $(function(){
-//   $('.box1').on('click', function(){
-//     $(this).slideUp();
-//   });
-// });
-
-// $(function(){
-//   $('button').on('click', function(){
-//     $('ul').children().css('color','red');
-//   });
-// });
-
-$(function() {
-  $('button').click(function() {
-    // cssで背景色を切り替え
-    $(".bgBox").toggleClass("bgPink");
-  });
-});
+function check(){
+  if (mail_form.mail.value == ""){
+      //条件に一致する場合(メールアドレスが空の場合)
+      alert("メールアドレスを入力してください");    //エラーメッセージを出力
+      return false;    //送信ボタン本来の動作をキャンセルします
+  }else{
+      //条件に一致しない場合(メールアドレスが入力されている場合)
+      return true;    //送信ボタン本来の動作を実行します
+  }
+};
