@@ -1,30 +1,7 @@
-/*.box1 {*/
-/*  background-color: #FFFFFF;*/
-/*  height: 200px;*/
-/*  width: 200px;*/
-/*  float: left;*/
-/*}*/
-
-/*.bg1 {*/
-/*  background-color: #FFAAAA;*/
-/*}*/
-
-/*.bg2 {*/
-/*  background-color: #FFBBBB;*/
-/*}*/
-
-/*.bg3 {*/
-/*  background-color: #FFCCCC;*/
-/*}*/
-
-/*.bg4 {*/
-/*  background-color: #FFDDDD;*/
-/*}*/
-
-.bgBox{
-  background-color:skyblue;
+.bgBox_2{
+  background-color:#CCC;
   padding : 20px;
 }
-.bgPink{
-  background-color:pink;
+.hLight{
+  background-color:aqua;
 }
