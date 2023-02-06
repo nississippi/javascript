@@ -1,14 +1,28 @@
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="app.css" />
-  </head>
-  <body>
-    <form action="xxx.html" method="get" name="mail_form">
-      メールアドレス：<input type="text" name="mail">
-      <input type="submit" value="送信" onClick="return check();">
-    </form>
-    <script src="jquery.min.js"></script>
-    <script src="app.js"></script>
-  </body>
-</html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+<!--
+$(function() {
+  // ブルー
+  $("#bgBtn1").click(function() {
+    // cssで背景色をブルーに変更
+    $("#bgBox").css("background-color","skyblue");
+  });
+  // ピンク
+  $("#bgBtn2").click(function() {
+    // cssで背景色をピンクに変更
+    $("#bgBox").css("background-color","pink");
+  });
+  // リセット
+  $("#bgBtn3").click(function() {
+    // cssで背景色をデフォルトに変更
+    $("#bgBox").css("background-color","#CCC");
+  });
+});
+//-->
+</script>
+
+<div id="bgBox" style="background-color : #CCC; padding : 20px;">
+  <input type="button" id="bgBtn1" value="ブルー">
+  <input type="button" id="bgBtn2" value="ピンク">
+  <input type="button" id="bgBtn3" value="リセット">
+</div>
