@@ -1,6 +1,4 @@
-$(function() {
-  $("p").click(function() {
-    // cssでテキスト上に背景色をon/off
-    $(this).toggleClass("hLight");
-  });
-});
+function inputCheck() {
+  var inputValue = document.getElementById( "inputForm" ).value;
+  document.getElementById( "check" ).innerHTML = '入力中：　' + inputValue;
+}
