@@ -1,13 +1,17 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css" />
   </head>
-  <body>
-    <label>
-      <input type="text" id="inputForm" onkeyup="inputCheck()">
-    </label>
-    <div id="check">入力前</div>
+  <body class="bg-light">
+    <div class="container w-75">
+      <h1 class="text-center text-info my-4">TODO</h1>
+      <form id="form" class="mb-4">
+        <input type="text" id="input" class="form-control" placeholder="TODOを入力" autocomplete="off">
+      </form>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
